@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rebound exercise sesion 3</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Patagonia Travel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Dark offcanvas
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="cuerpo mt-5 bg-light">
+
+
+      <h2 class="titulo display-6">¿Qué Actividad te gustaria hacer?</h2>
+
+      <div class="d-flex flex-row mt-4 w-50">
+        <h4 class="">Actividades:</h4>
+        <div class="dropdown mx-4 px-4">
+          <button
+            class="btn btn-warning dropdown-toggle rounded-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            id="opcionFrente"
+          >
+            trekking
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Trekking" >Trekking</a></li>
+            <li><a class="dropdown-item" href="#Natacion" >Natacion</a></li>
+            <li><a class="dropdown-item" href="#Ferry">Ferry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="carta active d-flex flex-column justify-content-center rounded-0 m-auto mt-5 mb-5"
+      id="Trekking">      
+      <div class="contenedorImagen">
+        <img src="./img/trekking.jpg" class="imagen"/>
+        <div class="text-overlay p-2">Trekking <br>Volcan Villarrica</div>
+      </div>
+        <div class="card trekking m-auto mt-5 rounded-0" style="width: 18rem">
+          <div class="card-body">
+            <p class="card-text">
+              Modalidad de excursionismo que consiste en recorrer a pie largas distancias o zonas determinadas, generalmente de alta montaña y poco frecuentadas por el turismo convencional
+              <br>
+              <br>
+              <a href="" >Conocer mas</a>
+            </p>
+            <a href="#" class="btn btn-secondary-emphasis rounded-0"
+              >Agendar Actividad</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="carta d-none d-flex flex-column justify-content-center rounded-0 m-auto mt-5 mb-5"
+       id="Natacion">
+
+       <div class="contenedorImagen">
+        <img src="./img/natacion.jpg" class="imagen" alt="" />
+        <div class="text-overlay p-2">Natación <br>Lago Cochrane</div>
+      </div>
+        
+        <div class="card natacion m-auto mt-5 rounded-0" style="width: 18rem">
+          <div class="card-body">
+            <p class="card-text">
+              Deporte o ejercicio que consiste en nadar en las pruebas de
+              natacion se compite en velocidad, en cualquiera de los cuatro
+              estilos: braza, crol, espalda y mariposa
+
+              <br>
+              <br>
+              <a href="" >Conocer mas</a>
+            </p>
+            <a href="#" class="btn btn-secondary-emphasis text-black rounded-0"
+              >Agendar Actividad</a
+            >
+          </div>
+        </div>
+      </div>
+        <div
+          class="carta d-none d-flex flex-column justify-content-center rounded-0 m-auto mt-5 mb-5"
+        id="Ferry">
+        
+       <div class="contenedorImagen">
+          <img src="./img/ferry.jpg" class="imagen" alt="" />
+          <div class="text-overlay p-2">Ferry <br>Lago Llanquihue</div>
+      </div>
+          <div class="card ferry m-auto mt-5 rounded-0" style="width: 18rem">
+            <div class="card-body">
+              <p class="card-text">
+                Embarcacion que realiza alternativamente el mismo recorrido entre dos puntos; especialmente la de grandes dimensiones destinada al transporte de cargas pesadas o pasajeros
+                <br>
+                <br>
+                <a href="" >Conocer mas</a>
+              </p>
+              <a href="#" class="btn btn-secondary-emphasis rounded-0"
+                >Agendar Actividad</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>
